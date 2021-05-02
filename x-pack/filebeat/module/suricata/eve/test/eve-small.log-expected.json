@@ -29,7 +29,7 @@
         "source.ip": "192.168.86.85",
         "source.port": 55406,
         "suricata.eve.event_type": "ssh",
-        "suricata.eve.flow_id": 298824096901438,
+        "suricata.eve.flow_id": "298824096901438",
         "suricata.eve.in_iface": "en0",
         "suricata.eve.ssh.client.proto_version": "2.0",
         "suricata.eve.ssh.client.software_version": "OpenSSH_7.6",
@@ -88,7 +88,7 @@
         "suricata.eve.alert.signature": "ET POLICY Observed IP Lookup Domain (l2 .io in TLS SNI)",
         "suricata.eve.alert.signature_id": 2024833,
         "suricata.eve.event_type": "alert",
-        "suricata.eve.flow_id": 904992230150281,
+        "suricata.eve.flow_id": "904992230150281",
         "suricata.eve.in_iface": "en0",
         "suricata.eve.tls.session_resumed": true,
         "suricata.eve.tls.sni": "l2.io",
@@ -142,7 +142,7 @@
         "source.ip": "192.168.86.85",
         "source.port": 56119,
         "suricata.eve.event_type": "http",
-        "suricata.eve.flow_id": 2115002772430095,
+        "suricata.eve.flow_id": "2115002772430095",
         "suricata.eve.http.http_content_type": "text/xml",
         "suricata.eve.http.protocol": "HTTP/1.1",
         "suricata.eve.in_iface": "en0",
@@ -151,6 +151,7 @@
             "suricata"
         ],
         "url.domain": "192.168.86.28",
+        "url.extension": "xml",
         "url.original": "/dd.xml",
         "url.path": "/dd.xml",
         "user_agent.device.name": "Mac",
@@ -164,7 +165,7 @@
     {
         "@timestamp": "2018-07-05T19:44:33.222Z",
         "destination.address": "192.168.86.85",
-        "destination.domain": "192.168.86.28",
+        "destination.domain": "192.168.86.85",
         "destination.ip": "192.168.86.85",
         "destination.port": 56118,
         "event.category": [
@@ -173,7 +174,7 @@
         "event.dataset": "suricata.eve",
         "event.kind": "event",
         "event.module": "suricata",
-        "event.original": "{\"timestamp\":\"2018-07-05T15:44:33.222441-0400\",\"flow_id\":2211411903323127,\"in_iface\":\"en0\",\"event_type\":\"fileinfo\",\"src_ip\":\"192.168.86.28\",\"src_port\":8008,\"dest_ip\":\"192.168.86.85\",\"dest_port\":56118,\"proto\":\"TCP\",\"http\":{\"hostname\":\"192.168.86.28\",\"url\":\"\\/ssdp\\/device-desc.xml\",\"http_user_agent\":\"Mozilla\\/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/67.0.3396.99 Safari\\/537.36\",\"http_content_type\":\"application\\/xml\",\"http_method\":\"GET\",\"protocol\":\"HTTP\\/1.1\",\"status\":200,\"length\":1071},\"app_proto\":\"http\",\"fileinfo\":{\"filename\":\"\\/ssdp\\/device-desc.xml\",\"gaps\":false,\"state\":\"CLOSED\",\"md5\":\"427b7337ff37eeb24d74f47d8e04cf21\",\"sha1\":\"313573490192c685e9e53abef25453ed0d5e2aee\",\"sha256\":\"f610428ebddf6f8cf9e39322e672583c45fcdcf885efad0ab48fd53a3dfc2c4b\",\"stored\":false,\"size\":1071,\"tx_id\":0}}",
+        "event.original": "{\"timestamp\":\"2018-07-05T15:44:33.222441-0400\",\"flow_id\":2211411903323127,\"in_iface\":\"en0\",\"event_type\":\"fileinfo\",\"src_ip\":\"192.168.86.28\",\"src_port\":8008,\"dest_ip\":\"192.168.86.85\",\"dest_port\":56118,\"proto\":\"TCP\",\"http\":{\"hostname\":\"192.168.86.85\",\"url\":\"\\/ssdp\\/device-desc.xml\",\"http_user_agent\":\"Mozilla\\/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/67.0.3396.99 Safari\\/537.36\",\"http_content_type\":\"application\\/xml\",\"http_method\":\"GET\",\"protocol\":\"HTTP\\/1.1\",\"status\":200,\"length\":1071},\"app_proto\":\"http\",\"fileinfo\":{\"filename\":\"\\/ssdp\\/device-desc.xml\",\"gaps\":false,\"state\":\"CLOSED\",\"md5\":\"427b7337ff37eeb24d74f47d8e04cf21\",\"sha1\":\"313573490192c685e9e53abef25453ed0d5e2aee\",\"sha256\":\"f610428ebddf6f8cf9e39322e672583c45fcdcf885efad0ab48fd53a3dfc2c4b\",\"stored\":false,\"size\":1071,\"tx_id\":0}}",
         "file.path": "/ssdp/device-desc.xml",
         "file.size": 1071,
         "fileset.name": "eve",
@@ -186,7 +187,7 @@
         "network.protocol": "http",
         "network.transport": "tcp",
         "related.hosts": [
-            "192.168.86.28"
+            "192.168.86.85"
         ],
         "related.ip": [
             "192.168.86.28",
@@ -204,14 +205,15 @@
         "suricata.eve.fileinfo.state": "CLOSED",
         "suricata.eve.fileinfo.stored": false,
         "suricata.eve.fileinfo.tx_id": 0,
-        "suricata.eve.flow_id": 2211411903323127,
+        "suricata.eve.flow_id": "2211411903323127",
         "suricata.eve.http.http_content_type": "application/xml",
         "suricata.eve.http.protocol": "HTTP/1.1",
         "suricata.eve.in_iface": "en0",
         "tags": [
             "suricata"
         ],
-        "url.domain": "192.168.86.28",
+        "url.domain": "192.168.86.85",
+        "url.extension": "xml",
         "url.original": "/ssdp/device-desc.xml",
         "url.path": "/ssdp/device-desc.xml",
         "user_agent.device.name": "Mac",
@@ -274,7 +276,7 @@
         "suricata.eve.dns.ttl": 299,
         "suricata.eve.dns.type": "answer",
         "suricata.eve.event_type": "dns",
-        "suricata.eve.flow_id": 1684780223079543,
+        "suricata.eve.flow_id": "1684780223079543",
         "suricata.eve.in_iface": "en0",
         "tags": [
             "suricata"
@@ -455,7 +457,7 @@
         "source.ip": "192.168.86.85",
         "source.port": 56187,
         "suricata.eve.event_type": "tls",
-        "suricata.eve.flow_id": 89751777876473,
+        "suricata.eve.flow_id": "89751777876473",
         "suricata.eve.in_iface": "en0",
         "suricata.eve.tls.fingerprint": "6a:ff:ac:a6:5f:8a:05:e7:a9:8c:76:29:b9:08:c7:69:ad:dc:72:47",
         "suricata.eve.tls.issuerdn": "CN=Apple IST CA 2 - G1, OU=Certification Authority, O=Apple Inc., C=US",
@@ -532,7 +534,7 @@
         "suricata.eve.flow.alerted": false,
         "suricata.eve.flow.reason": "timeout",
         "suricata.eve.flow.state": "new",
-        "suricata.eve.flow_id": 1828507008887644,
+        "suricata.eve.flow_id": "1828507008887644",
         "tags": [
             "suricata"
         ]
@@ -574,7 +576,7 @@
         "source.ip": "192.168.50.1",
         "source.port": 57134,
         "suricata.eve.event_type": "http",
-        "suricata.eve.flow_id": 913701662641234,
+        "suricata.eve.flow_id": "913701662641234",
         "suricata.eve.http.protocol": "HTTP/1.1",
         "suricata.eve.in_iface": "eno6",
         "suricata.eve.tx_id": 0,
@@ -582,9 +584,11 @@
             "suricata"
         ],
         "url.domain": "ctldl.windowsupdate.com",
+        "url.extension": "cab",
         "url.original": "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/pinrulesstl.cab?111111111111",
-        "url.path": "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/pinrulesstl.cab",
+        "url.path": "/msdownload/update/v3/static/trustedr/en/pinrulesstl.cab",
         "url.query": "111111111111",
+        "url.scheme": "http",
         "user_agent.device.name": "Other",
         "user_agent.name": "Microsoft-CryptoAPI",
         "user_agent.original": "Microsoft-CryptoAPI/10.0",
@@ -622,7 +626,7 @@
         "source.ip": "192.168.50.1",
         "source.port": 60614,
         "suricata.eve.event_type": "tls",
-        "suricata.eve.flow_id": 1298574590709840,
+        "suricata.eve.flow_id": "1298574590709840",
         "suricata.eve.in_iface": "eno6",
         "suricata.eve.tls.fingerprint": "18:3c:11:45:46:e9:26:c7:87:64:0f:ed:47:86:1b:31:bf:0f:84:25",
         "suricata.eve.tls.issuerdn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust RSA CA 2018",
@@ -693,7 +697,7 @@
         "source.ip": "192.168.50.1",
         "source.port": 50898,
         "suricata.eve.event_type": "http",
-        "suricata.eve.flow_id": 1097935193623328,
+        "suricata.eve.flow_id": "1097935193623328",
         "suricata.eve.http.protocol": "HTTP/1.1",
         "suricata.eve.in_iface": "eno6",
         "suricata.eve.tx_id": 0,
@@ -742,7 +746,7 @@
         "source.ip": "192.168.50.1",
         "source.port": 12509,
         "suricata.eve.event_type": "tls",
-        "suricata.eve.flow_id": 289459143040794,
+        "suricata.eve.flow_id": "289459143040794",
         "suricata.eve.in_iface": "eno6",
         "suricata.eve.tls.ja3.hash": "44d502d471cfdb99c59bdfb0f220e5a8",
         "suricata.eve.tls.ja3.string": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27-41,29-23-24,0",

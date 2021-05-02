@@ -7,6 +7,8 @@ package capabilities
 import (
 	"fmt"
 
+	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/state"
+
 	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
 	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
 	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
@@ -90,11 +92,23 @@ func inputsMap(cfgInputs interface{}, l *logger.Logger) []map[string]interface{}
 
 	inputsMap := make([]map[string]interface{}, 0, len(inputsSet))
 	for _, s := range inputsSet {
-		mm, ok := s.(map[string]interface{})
-		if !ok {
+		switch mm := s.(type) {
+		case map[string]interface{}:
+			inputsMap = append(inputsMap, mm)
+		case map[interface{}]interface{}:
+			newMap := make(map[string]interface{})
+			for k, v := range mm {
+				key, ok := k.(string)
+				if !ok {
+					continue
+				}
+
+				newMap[key] = v
+			}
+			inputsMap = append(inputsMap, newMap)
+		default:
 			continue
 		}
-		inputsMap = append(inputsMap, mm)
 	}
 
 	return inputsMap
@@ -109,13 +123,13 @@ func (c *inputCapability) name() string {
 		return c.Name
 	}
 
-	t := "A"
+	t := "allow"
 	if c.Type == denyKey {
-		t = "D"
+		t = "deny"
 	}
 
 	// e.g IA(*) or ID(system/*)
-	c.Name = fmt.Sprintf("I%s(%s)", t, c.Input)
+	c.Name = fmt.Sprintf("I %s(%s)", t, c.Input)
 	return c.Name
 }
 
@@ -150,8 +164,9 @@ func (c *inputCapability) renderInputs(inputs []map[string]interface{}) ([]map[s
 
 		input[conditionKey] = isSupported
 		if !isSupported {
-			c.log.Errorf("input '%s' is left out due to capability restriction '%s'", inputType, c.name())
-			c.reporter.Update(status.Degraded)
+			msg := fmt.Sprintf("input '%s' is not run due to capability restriction '%s'", inputType, c.name())
+			c.log.Infof(msg)
+			c.reporter.Update(state.Degraded, msg, nil)
 		}
 
 		newInputs = append(newInputs, input)
@@ -185,7 +200,7 @@ func (c *multiInputsCapability) Apply(in interface{}) (interface{}, error) {
 
 	inputsMap, err = c.cleanupInput(inputsMap)
 	if err != nil {
-		c.log.Errorf("cleaning up config object failed for capability 'multi-outputs': %v", err)
+		c.log.Errorf("cleaning up config object failed for capability 'multi-inputs': %v", err)
 		return in, nil
 	}
 

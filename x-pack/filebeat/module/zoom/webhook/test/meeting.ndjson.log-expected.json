@@ -24,6 +24,7 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.id": "z8yCxTTTTSiw02QgCAp8uQ",
         "zoom.meeting.host_id": "z8yCxTTTTSiw02QgCAp8uQ",
         "zoom.meeting.id": "6962400003",
         "zoom.meeting.issues": "Unstable audio quality",
@@ -52,7 +53,6 @@
         "observer.product": "Webhook",
         "observer.vendor": "Zoom",
         "related.user": [
-            "uLoRgfbbTayCX6r2Q_qQsQ",
             "uLoRgfbbTayCX6r2Q_qQsQ"
         ],
         "service.type": "zoom",
@@ -60,6 +60,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.email": "someemail@email.com",
+        "user.id": "uLoRgfbbTayCX6r2Q_qQsQ",
         "zoom.account_id": "o8KK_AAACq6BBEyA70CA",
         "zoom.meeting.host_id": "uLoRgfbbTayCX6r2Q_qQsQ",
         "zoom.meeting.id": 111111111,
@@ -97,7 +99,13 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "url.domain": "zoom.us",
         "url.full": "https://zoom.us/j/00000000",
+        "url.original": "https://zoom.us/j/00000000",
+        "url.path": "/j/00000000",
+        "url.scheme": "https",
+        "user.email": "someemail@email.com",
+        "user.id": "BBBBBBBBBB",
         "zoom.account_id": "AAAAAAAAAAA",
         "zoom.meeting.id": 155184668,
         "zoom.meeting.start_time": "2019-07-11T20:00:00Z",
@@ -133,7 +141,6 @@
         "observer.product": "Webhook",
         "observer.vendor": "Zoom",
         "related.user": [
-            "BBBBBBBBBB",
             "BBBBBBBBBB"
         ],
         "service.type": "zoom",
@@ -141,6 +148,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.email": "someemail@email.com",
+        "user.id": "BBBBBBBBBB",
         "zoom.account_id": "AAAAAAAAAA",
         "zoom.meeting.host_id": "BBBBBBBBBB",
         "zoom.meeting.id": 809321987,
@@ -178,6 +187,7 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.id": "uLoRgfbbTayCX6r2Q_qQsQ",
         "zoom.account_id": "o8KK_AAACq6BBEyA70CA",
         "zoom.meeting.host_id": "uLoRgfbbTayCX6r2Q_qQsQ",
         "zoom.meeting.id": "111111111",
@@ -212,6 +222,7 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.id": "uLoRgfbbTayCX6r2Q_qQsQ",
         "zoom.account_id": "o8KK_AAACq6BBEyA70CA",
         "zoom.meeting.host_id": "uLoRgfbbTayCX6r2Q_qQsQ",
         "zoom.meeting.id": "111111111",
@@ -247,7 +258,12 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "url.domain": "zoom.us",
         "url.full": "https://zoom.us/w/someendpointhere",
+        "url.original": "https://zoom.us/w/someendpointhere",
+        "url.path": "/w/someendpointhere",
+        "url.scheme": "https",
+        "user.id": "uLobbbbbbbbbb_qQsQ",
         "zoom.account_id": "lAAAAAAAAAAAAA",
         "zoom.meeting.host_id": "uLobbbbbbbbbb_qQsQ",
         "zoom.meeting.id": 150000008,
@@ -302,6 +318,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.email": "somemail@email.com",
+        "user.id": "Lobbbbbbbbbb_qQsQ",
         "zoom.account_id": "lAAAAAAAAAAAAA",
         "zoom.meeting.host_id": "uLobbbbbbbbbb_qQsQ",
         "zoom.meeting.id": 150000008,
@@ -342,6 +360,7 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.id": "uLobbbbbbbbbb_qQsQ",
         "zoom.account_id": "lAAAAAAAAAAAAA",
         "zoom.meeting.host_id": "uLobbbbbbbbbb_qQsQ",
         "zoom.meeting.id": 150000008,
@@ -375,6 +394,7 @@
         "observer.product": "Webhook",
         "observer.vendor": "Zoom",
         "related.user": [
+            "s0AAAASoSE1V8KIFOCYw",
             "z8yCxTTTTSiw02QgCAp8uQ"
         ],
         "service.type": "zoom",
@@ -382,6 +402,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.full_name": "Arya Arya",
+        "user.id": "s0AAAASoSE1V8KIFOCYw",
         "zoom.account_id": "EPeQtiABC000VYxHMA",
         "zoom.meeting.host_id": "z8yCxTTTTSiw02QgCAp8uQ",
         "zoom.meeting.id": "6962400003",
@@ -417,6 +439,7 @@
         "observer.product": "Webhook",
         "observer.vendor": "Zoom",
         "related.user": [
+            "s0AAAASoSE1V8KIFOCYw",
             "z8yCxTTTTSiw02QgCAp8uQ"
         ],
         "service.type": "zoom",
@@ -424,6 +447,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.full_name": "Arya Arya",
+        "user.id": "s0AAAASoSE1V8KIFOCYw",
         "zoom.account_id": "EPeQtiABC000VYxHMA",
         "zoom.meeting.host_id": "z8yCxTTTTSiw02QgCAp8uQ",
         "zoom.meeting.id": "6962400003",
@@ -466,6 +491,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.full_name": "Shrijana Shrijana",
+        "user.id": "z8yCxjjyTAAAA2QgCfp8uQ",
         "zoom.account_id": "EPeQti9EQsiyO30GVYxHMA",
         "zoom.meeting.host_id": "z8yCxjjyTAAAA2QgCfp8uQ",
         "zoom.meeting.id": "5590000000",
@@ -500,6 +527,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.full_name": "Tom Harry",
+        "user.id": "zf8yCxjjyTSdteriw02QgCfp8uQ",
         "zoom.account_id": "APeeQti9ErttQsiyO30GVYxHMA",
         "zoom.meeting.host_id": "zf8yCxjjyTSdteriw02QgCfp8uQ",
         "zoom.meeting.id": "5594913504",
@@ -527,6 +556,7 @@
         "observer.product": "Webhook",
         "observer.vendor": "Zoom",
         "related.user": [
+            "iFxeBPYun6SAiWUzBcEkX",
             "uLoRgfbbTayCX6r2Q_qQsQ"
         ],
         "service.type": "zoom",
@@ -534,6 +564,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.full_name": "shree",
+        "user.id": "iFxeBPYun6SAiWUzBcEkX",
         "zoom.account_id": "o8KK_AAACq6BBEyA70CA",
         "zoom.meeting.host_id": "uLoRgfbbTayCX6r2Q_qQsQ",
         "zoom.meeting.id": "111111111",
@@ -564,6 +596,7 @@
         "observer.product": "Webhook",
         "observer.vendor": "Zoom",
         "related.user": [
+            "iFxeBPYun6SAiWUzBcEkX",
             "uLoRgfbbTayCX6r2Q_qQsQ"
         ],
         "service.type": "zoom",
@@ -571,6 +604,8 @@
             "zoom-webhook",
             "forwarded"
         ],
+        "user.full_name": "shree",
+        "user.id": "iFxeBPYun6SAiWUzBcEkX",
         "zoom.account_id": "o8KK_AAACq6BBEyA70CA",
         "zoom.meeting.host_id": "uLoRgfbbTayCX6r2Q_qQsQ",
         "zoom.meeting.id": "111111111",
