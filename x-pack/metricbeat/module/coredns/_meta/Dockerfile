@@ -3,7 +3,7 @@ FROM coredns/coredns:1.5.0
 
 # create an enhanced container with nc command available since coredns is based
 # on scratch image making healthcheck impossible
-FROM alpine:latest
+FROM alpine:3.18.3
 COPY --from=0 /coredns /coredns
 # Expose client, management, and cluster ports
 # For DNS
