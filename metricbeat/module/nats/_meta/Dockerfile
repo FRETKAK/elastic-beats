@@ -9,7 +9,7 @@ RUN cd src/github.com/nats-io/nats.go/examples/nats-bench && git checkout tags/v
 
 # create an enhanced container with nc command available since nats is based
 # on scratch image making healthcheck impossible
-FROM alpine:latest
+FROM alpine:3
 COPY --from=0 / /opt/nats
 COPY --from=build-env /go/src/github.com/nats-io/nats.go/examples/nats-bench/nats-bench /nats-bench
 COPY run.sh /run.sh
