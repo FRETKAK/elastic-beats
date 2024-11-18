@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:trusty-20190425
 ADD scripts /scripts
 
 ENV REALM_NAME ELASTIC
